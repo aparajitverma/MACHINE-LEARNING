@@ -1,1 +1,4 @@
 K-Nearest-Neighbour on IRIS dataset
+KNN is one of a classification algorithm which puts a point in one of the group.
+There may be only one group, in that case all data points fall in one group only.
+Maximum number of groups can be n(number of data points).
