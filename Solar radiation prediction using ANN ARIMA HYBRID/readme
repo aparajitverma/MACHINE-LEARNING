@@ -1,1 +1,20 @@
-Solar radiation prediction
+Solar radiation prediction using Hybrid model of ANN and SARIMAX
+
+DATASET USED: city of Jaiselmer,Jodhpur,Bikaner,Barmer(dataset uploaded too)
+
+SARIMAX(with parameter) - class statsmodels.tsa.statespace.sarimax.SARIMAX(endog, exog=None, order=1, 0, 0, seasonal_order=0,
+0, 0, 0, trend=None, measurement_error=False, time_varying_regression=False, mle_regression=True, 
+simple_differencing=False, enforce_stationarity=True, enforce_invertibility=True, hamilton_representation=False, 
+concentrate_scale=False, trend_offset=1, use_exact_diffuse=False, dates=None, freq=None, missing='none', **kwargs)
+
+Artificial Neural Network -The parameters of a neural network are typically the weights of the connections. In this case, 
+these parameters are learned during the training stage. So, the algorithm itself (and the input data) tunes these parameters.
+
+I have made hybrid model by using SARIMAX first then using its result on ANN
+
+Sarimax is used for time series forecasting for seasonal and linear data. ANN is used for non liner part
+
+I have uploaded certain case studies and also included mine.I found these results:
+1)Radiation depends on months. As certain months are hotter than other
+2)The target (y) is GHI (Global Horizontal Irradiance) whose radiation occurs only in sunlight.
+3) Model came out to be 96% accurate
